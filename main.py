@@ -43,7 +43,6 @@ with open(path, 'wb') as g:
      g.write('sql = """INSERT INTO TASK(DATE_COl)VALUES (CURTIME())"""\n')
      g.write("cursor.execute(sql)\n")
      g.write('db.commit()\n')
-     g.write('db.rollback()\n')
      g.write('db.close()\n')
 g.close()
 
